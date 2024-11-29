@@ -14,6 +14,9 @@
 (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+;; 切换输入法
+(global-set-key (kbd "M-m") 'toggle-input-method)
+
 (global-set-key (kbd "<f2>") 'hs-toggle-hiding)
 ;;(global-set-key (kbd "<f5>") 'eshell)
 ;;(global-set-key (kbd "<f8>") 'neotree)

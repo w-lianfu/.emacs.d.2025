@@ -41,6 +41,9 @@
 ;; ------ 新的探索 ------
 (require 'init-explore)
 
+;; ------ 中文输入法 ------
+(require 'init-pyim)
+
 ;; ------ 设置编码 ------
 (require 'init-coding)
 
@@ -69,7 +72,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(typescript-mode yasnippet ace-jump-mode company evil dashboard afternoon-theme helm-themes popwin popup neotree helm-projectile gruvbox-theme disable-mouse cyberpunk-theme)))
+   '(swift-mode pyim-basedict pyim rust-mode go-mode sass-mode rjsx-mode web-mode typescript-mode yasnippet ace-jump-mode company evil dashboard afternoon-theme helm-themes popwin popup neotree helm-projectile gruvbox-theme disable-mouse cyberpunk-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
