@@ -65,6 +65,9 @@
 ;; ------ magit ------
 (require 'init-magit)
 
+;; ------ org-mode 配置 ------
+(require 'init-org)
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
