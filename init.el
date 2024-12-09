@@ -68,6 +68,15 @@
 ;; ------ org-mode 配置 ------
 (require 'init-org)
 
+;; ------ w3m 配置 ------
+(require 'init-w3m)
+
+;; ------ neotree 配置 ------
+(require 'init-neotree)
+
+;; ------ emms 配置 ------
+(require 'init-emms)
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -75,7 +84,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(swift-mode pyim-basedict pyim rust-mode go-mode sass-mode rjsx-mode web-mode typescript-mode yasnippet ace-jump-mode company evil dashboard afternoon-theme helm-themes popwin popup neotree helm-projectile gruvbox-theme disable-mouse cyberpunk-theme)))
+   '(all-the-icons solidity-mode emms-player-simple-mpv mpv vlc emms w3m monokai-theme swift-mode pyim-basedict pyim rust-mode go-mode sass-mode rjsx-mode web-mode typescript-mode yasnippet ace-jump-mode company evil dashboard afternoon-theme helm-themes popwin popup neotree helm-projectile gruvbox-theme disable-mouse cyberpunk-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
