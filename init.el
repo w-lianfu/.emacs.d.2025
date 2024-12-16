@@ -24,7 +24,7 @@
 (require 'init-cursor)
 
 ;; ------ 设置字体 ------
-(require 'init-font)
+;; (require 'init-font)
 
 ;; ------ 绑定全局快捷键 ------
 (require 'init-key-binding)

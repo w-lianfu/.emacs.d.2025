@@ -21,8 +21,8 @@
 ;;   (if (display-graphic-p)
 ;;     (progn
 ;;       (set-fontset-font (frame-parameter nil 'font)
-;;       charset
-;;       (font-spec :family "PingFang SC" :size 14)))))
+;;         charset
+;;         (font-spec :family "PingFang SC" :size 14)))))
 
 
 ;; ------ Windows 中文字体兼容 ------

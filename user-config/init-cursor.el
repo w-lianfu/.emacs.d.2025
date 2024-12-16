@@ -4,18 +4,16 @@
 
 ;;; Code:
 
+;; 禁止光标闪烁
+(setq-default blink-cursor-mode nil)
 ;; 设置光标样式
 (setq-default cursor-type 'box)
-(add-to-list 'default-frame-alist
-  '(cursor-color . "#d500f9"))
-;;(setq default-frame-alist
-;;  '((cursor-color . "#d500f9")))
-;; 禁止光标闪烁
-(blink-cursor-mode 0)
-;; 禁用触摸板与鼠标
-;; 需要安装plugin: disable-mouse
-(global-disable-mouse-mode t)
+;; 设置光标颜色
+(set-cursor-color "#D500F9")
 
+;; 禁用触摸板与鼠标
+;; 需要安装插件 disable-mouse
+(global-disable-mouse-mode t)
 
 (provide 'init-cursor)
 

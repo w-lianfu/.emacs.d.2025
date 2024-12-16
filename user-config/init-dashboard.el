@@ -6,32 +6,29 @@
 
 ;; ------ Dashboard ------
 
-(defun my/dashboard-banner ()
-  (setq dashboard-banner-logo-title
-        (format "Emacs ready in %.2f seconds with %d garbage collections."
-                (float-time (time-subtract after-init-time before-init-time)) gcs-done)))
-
 (use-package dashboard
-  :init
-  (add-hook 'after-init-hook 'dashboard-refresh-buffer)
-  (add-hook 'dashboard-mode-hook 'my/dashboard-banner)
+  :ensure t
   :config
-  (setq dashboard-startup-banner 'logo)
-  (setq dashboard-init-info "Welcome to my github: https://github.com/w-lianfu")
-  (setq dashboard-set-navigator t)
   (dashboard-setup-startup-hook))
 
-(setq initial-buffer-choice
-      (lambda () (get-buffer "*dashbaord*")))
+;; Set the title
+(setq dashboard-banner-logo-title "Welcome to my github: https://github.com/w-lianfu")
 
-;; Configuration
-;; (setq dashboard-center-content t)
+;; Set the banner
+(setq dashboard-startup-banner 'logo)
+(setq dashboard-set-navigator t)
 
-;; agenda / registers
+(setq dashboard-item-shortcuts '((recents   . "r")
+                                 (bookmarks . "m")
+                                 (projects  . "p")))
+
 (setq dashboard-items '((recents . 6)
                         (bookmarks . 5)
                         (projects . 5)))
 
+;; (setq dashboard-icon-type 'all-the-icons)
+;; (setq dashboard-set-heading-icons t)
+;; (setq dashboard-set-file-icons t)
 
 (provide 'init-dashboard)
 
