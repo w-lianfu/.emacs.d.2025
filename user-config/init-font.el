@@ -10,6 +10,7 @@
 ;; (set-frame-font "Monaco-11" t t)
 ;; (set-frame-font "Droid Sans Mono-11" t t)
 ;; (set-frame-font "Ubuntu Mono-13" t t)
+;; (set-frame-font "Droid Sans Mono Regular-14" t t)
 (set-frame-font "Noto Sans Mono Regular-14" t t)
 
 ;; (set-face-attribute 'default nil :font "Droid Sans Mono")

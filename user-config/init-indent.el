@@ -20,6 +20,9 @@
 (setq-default typescript-indent-level 2)
 (setq-default typescript-auto-indent-flag t)
 (setq-default rjsx--indent-running-offset 2)
+;; rust indentation
+(setq rust-indent-unit 2)
+(setq rust-indent-offset 2)
 
 
 (provide 'init-indent)
